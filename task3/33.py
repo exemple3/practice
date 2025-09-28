@@ -8,7 +8,7 @@ def f(snow, start, finish):
 a = input().split()
 n = int(a[0])
 k = int(a[1])
-# улицы и события
+# улицы и запросы
 
 snow = [0] * (n + 1)
 
