@@ -3,15 +3,22 @@ def f(snow, start, finish):
     for i in range(start, finish + 1):
         res += snow[i]
     return res
+# сколько снега на улице i
 
-n, k = map(int, input().split())
+a = input().split()
+n = int(a[0])
+k = int(a[1])
+# улицы и события
 
 snow = [0] * (n + 1)
 
-for _ in range(k):
-    o = list(map(int, input().split()))
+for i in range(k):
+    o = []
+    for j in input().split():
+        o.append(int(j))
     otype = o[0]
-
+    # считывание значений, 1 число - событие
+    
     if otype == 1:
         st, snowk = o[1], o[2]
         snow[st] += snowk
