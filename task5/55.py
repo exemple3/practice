@@ -6,12 +6,12 @@ matrix = []
 for i in range(h):
     row = input().split()
     r = []
-    for i in row:
-        r.append(int(i))
-    matrix.append(row)
+    for j in row:
+        r.append(int(j))
+    matrix.append(r)
 # ввод матрицы
 
-min1_r = h   # мин. строка с единицей 
+min1_r = h   # мин. строка с единицей
 max1_r = -1  # макс. строка с единицей
 min1_c = w   # мин. столбец с единицей
 max1_c = -1  # макс. столбец с единицей
@@ -29,5 +29,5 @@ topleft_r = min1_r - 1
 topleft_c = min1_c - 1
 lowerright_r = max1_r + 1
 lowerright_c = max1_c + 1
-# так как должен помещаться в
+# так как должен помещаться в прямоугольник
 print(topleft_r, topleft_c, lowerright_r, lowerright_c)
