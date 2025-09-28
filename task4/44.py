@@ -12,8 +12,8 @@ k = int(a[1])
 # ввод длины слова и количества шифрования
 
 p = []
-    for j in input().split():
-        p.append(int(j))
+for j in input().split():
+    p.append(int(j))
 a = input()
 # ввод перестановки и слова
 
